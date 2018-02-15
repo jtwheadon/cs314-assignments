@@ -24,14 +24,6 @@ footer {
   padding:10px;
 }
 
-h1 {
-  font-size: 40px;
-}
-
-h2 {
-  font-size:24px;
-}
-
 nav {
   width:100%;
   text-align: right;
@@ -46,29 +38,19 @@ nav {
 
 .imageSection {
   width:100%;
-  height:400px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  padding-top:20px;
+  padding-bottom:20px;
 }
 
-.imageContainer {
-  position: relative;
-  width:50%;
-  height:100%;
-  text-align: center;
-}
-
-img {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.imageSection img {
+  margin: 10px;
 }
 
 .buttonSection {
-  background-color: navy;
+  background: linear-gradient(to bottom right, navy, yellow);
   position: relative;
   height:200px;
 }
@@ -82,4 +64,15 @@ img {
   transform: translate(-50%,-50%);
   color:white;
   padding:10px;
+  background-color: transparent;
+}
+
+.button:hover {
+  background-color:rgba(255,255,255,.3);
+  cursor: pointer;
+}
+
+.button:active {
+  background-color:rgba(255,255,255,.6);
+  cursor: pointer;
 }
