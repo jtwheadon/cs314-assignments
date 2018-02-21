@@ -1,1 +1,35 @@
 
+.navContainer {
+  height:60px;
+  background-color: rgb(60,60,60);
+  width:100%;
+  padding-left:30px;
+  padding-right:30px;
+  box-sizing: border-box;
+}
+
+.navWrap {
+  float:left;
+  height:100%;
+}
+
+.navWrap a {
+  color:white;
+  height:100%;
+  padding: 20px 10px 10px;
+  display: inline-block;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.navWrap a:hover {
+  border-bottom: 5px solid white;
+  box-sizing: border-box;
+}
+
+.logoWrap {
+  float:right;
+  background-color: white;
+  width:60px;
+  height:100%;
+}
