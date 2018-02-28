@@ -79,6 +79,21 @@ textarea {
   border-color:gray;
 }
 
+.positionRadioContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0px;
+}
+
+.positionRadioContainer input {
+  width: auto;
+  margin: 5px 20px;
+}
+
+.positionRadioContainer label {
+  width:100%;
+}
+
 .personalInfoForm input[type="submit"] {
   position: relative;
   box-sizing: border-box;
@@ -92,16 +107,6 @@ textarea {
   background-color: lightgray;
   transition:  0.1s;
   transition-timing-function: ease-in;
-}
-
-.positionRadioContainer {
-  display: flex;
-  margin: 10px 0px;
-}
-
-.positionRadioContainer input {
-  width: auto;
-  margin: 5px 20px;
 }
 
 @media screen and (max-width: 768px) {
