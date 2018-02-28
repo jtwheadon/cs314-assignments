@@ -1,1 +1,112 @@
 
+.headerSection {
+  width:100%;
+  padding-top:50px;
+  padding-bottom:50px;
+  background-color: lightblue;
+  text-align: center;
+}
+
+textarea {
+  resize: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+.formSection {
+  padding-top: : 100px;
+  position: relative;
+  height: 0px;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.personalInfoForm {
+  position: relative;
+  margin:auto;
+  width: 100%;
+  max-width:500px;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: left;
+}
+
+.personalInfoForm input {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 10px 5px;
+  margin: 5px 0px 20px;
+  border: 2px solid lightblue;
+}
+
+.personalInfoForm input::placeholder {
+  color: gray;
+}
+
+.personalInfoForm input:focus {
+  border-color:gray;
+}
+
+.personalInfoForm textarea {
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 10px 5px;
+  margin: 5px 0px 20px;
+  border: 2px solid lightblue;
+}
+
+.personalInfoForm select {
+  position: relative;
+  box-sizing: border-box;
+  height:35px;
+  width: 100%;
+  margin: 5px 0px 20px;
+  border-radius: 10px;
+  background-color: white;
+  border: 2px solid lightblue;
+  color: gray;
+}
+
+.personalInfoForm textarea::placeholder {
+  color: gray;
+}
+
+.personalInfoForm textarea:focus {
+  border-color:gray;
+}
+
+.personalInfoForm input[type="submit"] {
+  position: relative;
+  box-sizing: border-box;
+  color: white;
+  margin-top:20px;
+  background-color: gray;
+}
+
+.personalInfoForm input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: lightgray;
+  transition:  0.1s;
+  transition-timing-function: ease-in;
+}
+
+.positionRadioContainer {
+  display: flex;
+  margin: 10px 0px;
+}
+
+.positionRadioContainer input {
+  width: auto;
+  margin: 5px 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .html {
+    font-size: 14px;
+  }
+}
