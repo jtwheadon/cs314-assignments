@@ -43,7 +43,7 @@ textarea {
 }
 
 .personalInfoForm input::placeholder {
-  color: gray;
+  color: lightblue;
 }
 
 .personalInfoForm input:focus {
@@ -69,11 +69,10 @@ textarea {
   border-radius: 10px;
   background-color: white;
   border: 2px solid lightblue;
-  color: gray;
 }
 
 .personalInfoForm textarea::placeholder {
-  color: gray;
+  color: lightblue;
 }
 
 .personalInfoForm textarea:focus {
