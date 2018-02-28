@@ -1,1 +1,92 @@
 
+html {
+  width:100%;
+  height:100%;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+
+body {
+  width:100%;
+  height:100%;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+
+.roundButton {
+  padding: 10px 20px;
+  border-radius:100px;
+  border: 2px solid #5391C6;
+  color: #5391C6;
+}
+
+.navLinksContainer {
+  height:100%;
+  display: inline-flex;
+  padding: 40px 0;
+  box-sizing: border-box;
+  margin-right:20px;
+}
+
+.navLink {
+  color:#5391C6;
+  margin: 0 20px;
+}
+
+.navButtonsContainer {
+  height:100%;
+  padding: 27px 0;
+}
+
+.headerSection {
+  width:100%;
+  height:100%;
+  box-sizing: border-box;
+  background-color: rgb(250,250,250);
+  background-image: url("header-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.navbar {
+  height:100px;
+  width:100%;
+  padding:0 20px;
+  box-sizing: border-box;
+}
+
+.navLeft {
+  float:left;
+  height:100%;
+  display: flex;
+  padding:15px 0;
+  box-sizing:border-box;
+}
+
+.navRight {
+  float:right;
+  height:100%;
+  display: inline-flex;
+}
+
+.headerCardWrapper {
+  width:100%;
+  height:calc(100% - 200px);
+  padding:0 50px;
+  box-sizing: border-box;
+}
+
+.headerCard {
+  width:100%;
+  height:100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(100,100,100,.5);
+  padding-top:30px;
+  box-sizing: border-box;
+}
+
+.companiesContainer {
+
+}
