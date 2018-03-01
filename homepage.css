@@ -1,0 +1,164 @@
+
+html {
+  width:100%;
+  height:100%;
+  box-sizing: border-box;
+  overflow: scroll;
+  background-color: rgb(250,250,250);
+}
+
+body {
+  width:100%;
+  height:100%;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+
+.roundButton {
+  padding: 10px 20px;
+  border-radius:100px;
+  border: 2px solid white;
+  color: white;
+}
+
+.roundButton:hover {
+  cursor: pointer;
+  opacity:.8;
+  transition:  0.2s;
+  transition-timing-function: ease-in;
+}
+
+.navLinksContainer {
+  height:100%;
+  display: inline-flex;
+  padding: 40px 0;
+  box-sizing: border-box;
+  margin-right:20px;
+}
+
+.navLink {
+  color:white;
+  margin: 0 20px;
+}
+
+.navLink:hover {
+  cursor: pointer;
+  opacity:.8;
+  transition:  0.1s;
+  transition-timing-function: ease-in;
+}
+
+.navButtonsContainer {
+  height:100%;
+  padding: 27px 0;
+}
+
+.headerSection {
+  width:100%;
+  height:100%;
+  box-sizing: border-box;
+  background-image: url("header-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.navbar {
+  margin:auto;
+  height:100px;
+  width:100%;
+  padding:0 20px;
+  box-sizing: border-box;
+}
+
+.navLeft {
+  float:left;
+  height:100%;
+  display: flex;
+  padding:15px 0;
+  box-sizing:border-box;
+}
+
+.navRight {
+  float:right;
+  height:100%;
+  display: inline-flex;
+}
+
+.headerCardWrapper {
+  margin:auto;
+  width:100%;
+  height:calc(100% - 250px);
+  padding:0 50px;
+  box-sizing: border-box;
+}
+
+.headerCard {
+  width:100%;
+  height:100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(100,100,100,.5);
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.headerCardLeft {
+  width:50%;
+  height:100%;
+  position: relative;
+}
+
+.headerCardImg {
+  position:absolute;
+  width:100%;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.headerCardRight {
+  position: relative;
+  width:50%;
+  padding:20px;
+  box-sizing: border-box;
+}
+
+.headerCardRight h1 {
+  font-size: 2em;
+}
+.headerCardRight h2 {
+  font-size: 1.25em;
+  color:#5391C6;
+}
+
+.headerCardRightContent {
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+  padding-right:20px;
+}
+
+.headerCardRightTitle {
+  margin-bottom:20px;
+}
+
+.companiesContainer {
+  width:100%;
+  display:inline-flex;
+  padding: 0 50px 20px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.companyLogoContainer {
+  width:25%;
+  height:100%;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.companyLogo {
+  height:100%;
+}

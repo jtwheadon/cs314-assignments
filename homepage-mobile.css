@@ -1,0 +1,70 @@
+@media only screen and (max-width: 950px) {
+
+  .headerCardWrapper {
+    height:auto;
+  }
+
+  .headerCard {
+    padding: 20px 10px;
+  }
+
+  .headerCardLeft {
+    width:100%;
+    text-align: center;
+  }
+
+  .headerCardImg {
+    position:relative;
+    max-width: 300px;
+    transform:none;
+    top:auto;
+  }
+
+  .headerCardRight {
+    width:100%;
+    padding:20px;
+    text-align: center;
+  }
+
+  .headerCardRightContent {
+    position: relative;
+    top:auto;
+    transform: none;
+    width:100%;
+    max-width: 500px;
+    margin:auto;
+    padding: 0;
+  }
+
+  .headerCardRightTitle {
+    margin-bottom:20px;
+  }
+
+  .companyLogoContainer {
+    width:50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  html {
+    font-size: 16px;
+  }
+
+  .navLinksContainer {
+    margin-right:10px;
+  }
+
+  .navLink {
+    margin:0 5px;
+  }
+
+  .companyLogoContainer {
+    width:100%;
+  }
+
+  .headerCardWrapper {
+    padding: 0 20px;
+  }
+
+}
