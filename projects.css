@@ -1,0 +1,24 @@
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(100,100,100,0.5);
+  z-index: 100;
+  position: relative;
+}
+
+.roundButton {
+  color: #5192C5;
+  border-color: #5192C5;
+}
+
+.navLink {
+  color: #5192C5;
+}
+
+.navLinkActive {
+  color: #A5A5B1;
+}
+
+.headerSection {
+  background-color:rgb(250,250,250);
+  height:500px;
+}

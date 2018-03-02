@@ -1,3 +1,62 @@
+.navbar {
+  margin:auto;
+  height:100px;
+  width:100%;
+  padding:0 20px;
+  box-sizing: border-box;
+}
+
+.navLeft {
+  float:left;
+  height:100%;
+  display: flex;
+  padding:15px 0;
+  box-sizing:border-box;
+}
+
+.navRight {
+  float:right;
+  height:100%;
+  display: inline-flex;
+}
+.roundButton {
+  padding: 10px 20px;
+  border-radius:100px;
+  border: 2px solid white;
+  color: white;
+}
+
+.roundButton:hover {
+  cursor: pointer;
+  background-color: rgba(255,255,255,.4);
+  transition:  0.2s;
+  transition-timing-function: ease-in;
+}
+
+.navLinksContainer {
+  height:100%;
+  display: inline-flex;
+  padding: 40px 0;
+  box-sizing: border-box;
+  margin-right:20px;
+}
+
+.navLink {
+  color:white;
+  margin: 0 20px;
+}
+
+.navLink:hover {
+  cursor: pointer;
+  opacity:.8;
+  transition:  0.1s;
+  transition-timing-function: ease-in;
+}
+
+.navButtonsContainer {
+  height:100%;
+  padding: 27px 0;
+}
 
 footer {
   background-color: white;
@@ -31,4 +90,11 @@ footer {
   font-size:100px;
   padding:10px;
   color:black;
+}
+
+.socialIcon:hover {
+  cursor: pointer;
+  opacity:.8;
+  transition:  0.2s;
+  transition-timing-function: ease-in;
 }
