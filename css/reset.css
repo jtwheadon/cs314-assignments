@@ -1,11 +1,11 @@
 
 @font-face {
   font-family: "Muhkta Mahee";
-  src: url("fonts/MuktaMahee-Regular.eot");
+  src: url("../fonts/MuktaMahee-Regular.eot");
   src:
-  url("fonts/MuktaMahee-Regular.woff"),
-  url("fonts/MuktaMahee-Regular.woff2"),
-  url("fonts/MuktaMahee-Regular.ttf");
+  url("../fonts/MuktaMahee-Regular.woff"),
+  url("../fonts/MuktaMahee-Regular.woff2"),
+  url("../fonts/MuktaMahee-Regular.ttf");
 }
 
 html, body, div, span, applet, object, iframe,

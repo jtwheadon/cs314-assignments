@@ -1,0 +1,66 @@
+
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(100,100,100,0.5);
+  z-index: 100;
+  position: relative;
+}
+
+.roundButton {
+  color: #5192C5;
+  border-color: #5192C5;
+}
+
+.navLink {
+  color: #5192C5;
+}
+
+.navLinkActive {
+  color: #A5A5B1;
+}
+
+.headerSection {
+  background-color:rgb(250,250,250);
+  padding:100px 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.headerContent {
+  width:100%;
+  max-width:500px;
+  margin:auto;
+}
+
+.headerContent h1 {
+  color: #5192C5;
+  font-size: 36px;
+}
+
+.section {
+  padding:40px 20px;
+  box-sizing: border-box;
+  text-align: center;
+  width:100%;
+}
+
+.sectionImage {
+  width: 100%;
+  max-width:500px;
+  height:auto;
+}
+
+.hibernateSection {
+  background-color: #5192C5;
+  padding-top:20px;
+  color:white;
+}
+
+.bloomSection {
+  background-color: #444D55;
+  color:white;
+}
+
+.interCodesSection {
+  background-color: white;
+}
