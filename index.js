@@ -1,4 +1,31 @@
 
+// Global Functions
+
+// Gets a string from the user
+// minLength = minimum length of the string
+function getString(minLength) {
+  let userString = prompt("Enter a string that is atleast " + minLength + " character(s) long");
+  if (userString == null || userString.length < minLength){
+    return getString(minLength);
+  }
+  else {
+    return userString;
+  }
+}
+
+// Gets a list of strings
+function getStrings(numStrings) {
+  let userStrings = prompt("Enter " + numStrings + " strings separated by commas");
+  userStrings = userStrings.replace(/\s/g, '');
+  userStrings = userStrings.split(",");
+  if (userStrings.length === numStrings) {
+    return userStrings;
+  }
+  else {
+    return getStrings(numStrings);
+  }
+}
+
 
 /*
 1. Char Swap
@@ -7,6 +34,21 @@ Write a JavaScript function to create a new string from an input string from
 the user swapping the position of first and last characters. The string length entered by
 the user must be greater than or equal to 1.
 */
+function charSwap() {
+  let originalString = getString(1);
+  let newString;
+  if (originalString.length == 1) {
+    newString = originalString;
+  }
+  else {
+    let first = originalString.charAt(0);
+    let last = originalString.charAt(originalString.length-1);
+    let middle = originalString.substring(1,originalString.length-1);
+    newString = last + middle + first;
+  }
+
+  return newString;
+}
 
 /*
 2. Hi String
@@ -16,6 +58,15 @@ new string adding "Hi" in front of the input string. If the input string begins 
 return the original string. The string length entered by the user must be greater than or
 equal to 1.
 */
+function hiString() {
+  let userString = getString(1);
+  if (userString.substr(0,2) == "Hi") {
+    return userString;
+  }
+  else {
+    return "Hi" + userString;
+  }
+}
 
 /*
 3. Three Chars to Front
@@ -24,6 +75,12 @@ Write a JavaScript function to create a new string from an input
 string taking the last 3 characters and adding them to the front of the string. The string
 length entered by the user must be at least 3 characters long.
 */
+function threeCharsToFront() {
+  let userString = getString(3);
+  let threeChars = userString.substring(userString.length-3);
+  return threeChars + userString;
+}
+
 
 /*
 4. Strings to Sentence
@@ -36,7 +93,12 @@ Example:
 input from user: blue, dogs, chocolate
 output from function: My favorite color is blue, dogs are awesome, and I love chocolate!
 */
+function stringsToSentence() {
+  let userStrings = getStrings(3);
+  return `I like ${userStrings[0]} and ${userStrings[1]} and ${userStrings[2]}`
+}
 
+alert(stringsToSentence());
 /*
 5. Upper or Lower
 
