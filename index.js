@@ -14,15 +14,43 @@ function getString(minLength) {
 }
 
 // Gets a list of strings
+// use -1 if number of strings doesnt matter
 function getStrings(numStrings) {
-  let userStrings = prompt("Enter " + numStrings + " strings separated by commas");
+  let promptQ;
+  if (numStrings == -1) {
+    promptQ = "Enter strings separated by commas";
+  }
+  else {
+    promptQ = "Enter " + numStrings + " strings separated by commas"
+  }
+  let userStrings = prompt(promptQ);
+  if(userStrings == null || userStrings === "") {
+    return getStrings(numStrings);
+  }
   userStrings = userStrings.replace(/\s/g, '');
   userStrings = userStrings.split(",");
-  if (userStrings.length === numStrings) {
+  if (userStrings.length === numStrings || numStrings == -1) {
     return userStrings;
   }
   else {
     return getStrings(numStrings);
+  }
+}
+
+// Gets a list of integers from user
+function getIntegers() {
+  let userInts = prompt("Enter integers separated by commas");
+  if (userInts == null || userInts === "") {
+    return getIntegers();
+  }
+  testInts = userInts.replace(/,,/g,"x");
+  testInts = testInts.replace(/,/g,"");
+  if (isNaN(testInts) || userInts.charAt(0)===',' || userInts.charAt(userInts.length-1)===",") {
+    alert("You must only use integers separated by commas, no spaces or letters");
+    return getIntegers();
+  }
+  else {
+    return userInts.split(",");
   }
 }
 
@@ -98,7 +126,6 @@ function stringsToSentence() {
   return `I like ${userStrings[0]} and ${userStrings[1]} and ${userStrings[2]}`
 }
 
-alert(stringsToSentence());
 /*
 5. Upper or Lower
 
@@ -106,6 +133,16 @@ Write a JavaScript function that asks for a string from the user and
 creates a new string from that string where the first 3 characters are lowercase. If the
 string length entered by the user is less than 3 convert all the characters in upper case.
 */
+function upperOrLower() {
+  let userString = getString(1);
+  if (userString.length < 3) {
+    return userString.toUpperCase();
+  }
+  else {
+    return userString.substr(0,3).toLowerCase() + userString.substring(3);
+  }
+}
+
 
 /*
 6. Integer Swap
@@ -114,6 +151,14 @@ Write a JavaScript function that asks for a comma separated list of
 numbers from the user and swap the first and last elements of a given array of integers.
 Alert the result to the user. The array length given from the user should be at least 1.
 */
+function integerSwap() {
+  let userInts = getIntegers();
+  let end = userInts[userInts.length-1];
+  userInts[userInts.length-1] = userInts[0];
+  userInts[0] = end;
+  alert(userInts);
+  return userInts;
+}
 
 /*
 7. Longest String
@@ -121,6 +166,18 @@ Alert the result to the user. The array length given from the user should be at 
 Write a JavaScript function that asks for a comma separated list of
 strings from the user and alerts the longest string from the given array of strings.
 */
+function longestString() {
+  let userStrings = getStrings(-1);
+  let currLong = 0;
+  for (let i in userStrings) {
+    if (userStrings[i].length > userStrings[currLong].length){
+      currLong = i;
+    }
+  }
+  alert(userStrings[currLong]);
+  return userStrings[currLong];
+}
+
 
 /*
 8. Largest Even Number
@@ -129,6 +186,17 @@ Write a JavaScript function that asks for a comma separated list
 of numbers from the user. Convert this list to an array of numbers and alert the largest
 even number from the array of integers.
 */
+function largestEvenNumber() {
+  let userInts = getIntegers();
+  let currMax = 0;
+  for(let i in userInts) {
+    if(userInts[i] > userInts[currMax]){
+      currMax = i
+    }
+  }
+  alert(userInts[currMax])
+  return userInts[currMax];
+}
 
 /*
 9. Current Day Time
@@ -139,6 +207,29 @@ Example:
 Today is Friday.
 It is 4:00PM.
 */
+function currentDayTime() {
+  let days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  let currDate = new Date();
+  let dayOfWeek = days[currDate.getDay()]
+  let hour;
+  let ampm;
+  let milHour = currDate.getHours();
+  if (milHour === 0 || milHour > 12) {
+    ampm = "PM";
+    if (milHour === 0) {
+      hour = 12;
+    }
+    else {
+      hour = milHour-12
+    }
+  }
+  else {
+    ampm = "AM";
+  }
+  let minute = currDate.getMinutes();
+  alert(`Today is ${dayOfWeek}.
+It is ${hour}:${minute}${ampm}`);
+}
 
 /*
 10. Unlimited Function
@@ -146,3 +237,10 @@ It is 4:00PM.
 Write a JavaScript function that accepts an unlimited number of
 arguments and prints them out in a single string in a single alert.
 */
+function unlimitedFunction() {
+  let alertString = "";
+  for (let i in arguments) {
+    alertString = alertString + arguments[i];
+  }
+  alert(alertString);
+}
