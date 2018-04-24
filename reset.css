@@ -73,3 +73,16 @@ h6 {
 button {
 	font-size: 1em;
 }
+
+@font-face {
+  font-family: "Muhkta Mahee";
+  src: url("fonts/MuktaMahee-Regular.eot");
+  src:
+  url("fonts/MuktaMahee-Regular.woff"),
+  url("fonts/MuktaMahee-Regular.woff2"),
+  url("fonts/MuktaMahee-Regular.ttf");
+}
+
+body {
+  font-family: "Muhkta Mahee", serif;
+}
