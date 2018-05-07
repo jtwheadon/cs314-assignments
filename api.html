@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/homepage-mobile.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Jeff Wheadon Portfolio</title>
+  </head>
+  <body>
+    <section class="headerSection">
+      <nav class="navbar">
+        <div class="navLeft">
+          <a href="index.html"><img src="Assets/profile_pic@2x.png" style="height:100%;"></a>
+        </div>
+        <div class="navRight">
+          <div class="navLinksContainer">
+            <a href="my_travels.html"><div class="navLink">Map</div></a>
+            <a href="api.html"><div class="navLink">API</div></a>
+          </div>
+          <div class="navButtonsContainer">
+            <a href="contact.html"><div class="roundButton">
+              Contact Me
+            </div></a>
+          </div>
+        </div>
+      </nav>
+      <div class="headerCardWrapper">
+        <div class="headerCard">
+          <div class="headerCardLeft">
+            <img src="Assets/beer.png" class="headerCardImg">
+          </div>
+          <div class="headerCardRight">
+            <div class="headerCardRightContent">
+              <div class="headerCardRightTitle">
+                <h1>Beer Finder</h1>
+              </div>
+              <p>Below is a list of beers!!!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="filtersContainer">
+      <div id="all" class="filterBtn">Show All Beers</div>
+      <div id="light" class="filterBtn">Show Only Light Beers</div>
+      <div id="dark" class="filterBtn">Show Only Dark Beers</div>
+    </div>
+
+    <section id="beersContainer" style="box-sizing:border-box; padding:20px;"></section>
+
+
+    <footer>
+      <div class="footerTitleContainer">
+        <h2>Let's Connect</h2>
+      </div>
+      <div class="socialContainer">
+        <a target="_blank" href="https://www.facebook.com/jeff.wheadon"><i class="fab fa-facebook-square socialIcon" style="color:#3D5B97"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/jeff-wheadon-1b4958113/"><i class="fab fa-linkedin socialIcon" style="color:#127CB4"></i></a>
+      </div>
+    </footer>
+
+    <script src="javascript/beers.js"></script>
+
+  </body>
+</html>

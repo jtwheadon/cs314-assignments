@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/homepage-mobile.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <title>Jeff Wheadon Portfolio</title>
+    <style>
+    #map {
+      height: 100%;
+      min-height:500px;
+      width:100%;
+      position: relative;
+    }
+    </style>
+  </head>
+  <body>
+    <section class="headerSection">
+      <nav class="navbar">
+        <div class="navLeft">
+          <a href="index.html"><img src="Assets/profile_pic@2x.png" style="height:100%;"></a>
+        </div>
+        <div class="navRight">
+          <div class="navLinksContainer">
+            <a href="my_travels.html"><div class="navLink">Map</div></a>
+            <a href="api.html"><div class="navLink">API</div></a>
+          </div>
+          <div class="navButtonsContainer">
+            <a href="contact.html"><div class="roundButton">
+              Contact Me
+            </div></a>
+          </div>
+        </div>
+      </nav>
+      <div class="headerCardWrapper">
+        <div class="headerCard">
+          <div id="map"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bodySection" style="padding:20px;">
+      <h2>Places I've been:</h2>
+      <h3 style="margin-top:20px;">Dubai</h3>
+      <p>I had the pleasure of traveling to dubai to help run some STEM teacher workshops with the ministry of education.</p>
+      <h3 style="margin-top:20px;">Bahamas</h3>
+      <p>My grandparents take all of their grandchildren on a big vacation for their 16th birthdays. I chose to go to the bahamas and swim with dolphins!</p>
+      <h3 style="margin-top:20px;">Glasgow</h3>
+      <p>For two weeks over the Summer of 2016 my family and I traveled parts of Europe and I got to explore where my step mom grew up in Scotland</p>
+    </section>
+
+    <footer>
+      <div class="footerTitleContainer">
+        <h2>Let's Connect</h2>
+      </div>
+      <div class="socialContainer">
+        <a target="_blank" href="https://www.facebook.com/jeff.wheadon"><i class="fab fa-facebook-square socialIcon" style="color:#3D5B97"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/jeff-wheadon-1b4958113/"><i class="fab fa-linkedin socialIcon" style="color:#127CB4"></i></a>
+      </div>
+    </footer>
+
+    <script src="javascript/my_travels_map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIKamQxnIGE7OkZv6sZAuIan4B-KmveFk&callback=initMap"
+    async defer></script>
+  </body>
+</html>
