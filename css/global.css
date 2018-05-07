@@ -1,0 +1,148 @@
+.navbar {
+  margin:auto;
+  height:100px;
+  width:100%;
+  padding:0 20px;
+  box-sizing: border-box;
+}
+
+.navLeft {
+  float:left;
+  height:100%;
+  display: flex;
+  padding:15px 0;
+  box-sizing:border-box;
+}
+
+.navRight {
+  float:right;
+  height:100%;
+  display: inline-flex;
+}
+
+.roundButton {
+  padding: 10px 20px;
+  border-radius:100px;
+  border: 2px solid white;
+  color: white;
+}
+
+.roundButton:hover {
+  cursor: pointer;
+  background-color: rgba(255,255,255,.4);
+  transition:  0.2s;
+  transition-timing-function: ease-in;
+}
+
+.navLinksContainer {
+  height:100%;
+  display: inline-flex;
+  padding: 40px 0;
+  box-sizing: border-box;
+  margin-right:20px;
+}
+
+.navLink {
+  color:white;
+  margin: 0 20px;
+}
+
+.navLink:hover {
+  cursor: pointer;
+  opacity:.8;
+  transition:  0.1s;
+  transition-timing-function: ease-in;
+}
+
+.navButtonsContainer {
+  height:100%;
+  padding: 27px 0;
+}
+
+footer {
+  background-color: white;
+  width:100%;
+  box-sizing: border-box;
+  padding:100px 0;
+}
+
+.footerTitleContainer {
+  border-top: 2px solid black;
+  height:30px;
+  padding: 0 50px;
+  margin: auto;
+  text-align: center;
+  width:100%;
+  width:330px;
+  box-sizing: border-box;
+}
+
+.footerTitleContainer h2 {
+  margin-top: -20px;
+  background-color: white;
+}
+
+.socialContainer {
+  margin: auto;
+  text-align: center;
+}
+
+.socialIcon {
+  font-size:100px;
+  padding:10px;
+  color:black;
+}
+
+.socialIcon:hover {
+  cursor: pointer;
+  opacity:.8;
+  transition:  0.2s;
+  transition-timing-function: ease-in;
+}
+
+.bodySection {
+  max-width: 1080px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.card {
+  box-shadow: 0 2px 4px rgba(100,100,100,.5);
+  box-sizing: border-box;
+  position: relative;
+}
+
+.cardButton {
+  text-align: center;
+  color:rgb(100,100,100);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-top: solid 1px rgb(200,200,200);
+  padding:15px;
+  box-sizing: border-box;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover .cardButton {
+  color: #5391C6;
+}
+
+@media only screen and (max-width: 768px) {
+
+  html {
+    font-size: 16px;
+  }
+
+  .navLinksContainer {
+    margin-right:10px;
+  }
+
+  .navLink {
+    margin:0 5px;
+  }
+}

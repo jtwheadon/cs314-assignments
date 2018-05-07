@@ -1,4 +1,4 @@
-
+/*
 $( document ).ready(function() {
   loadUsers();
 });
@@ -135,3 +135,4 @@ function loadAlbums(userID) {
     }
   });
 }
+*/

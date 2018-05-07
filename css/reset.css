@@ -1,7 +1,12 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+
+@font-face {
+  font-family: "Muhkta Mahee";
+  src: url("../fonts/MuktaMahee-Regular.eot");
+  src:
+  url("../fonts/MuktaMahee-Regular.woff"),
+  url("../fonts/MuktaMahee-Regular.woff2"),
+  url("../fonts/MuktaMahee-Regular.ttf");
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -49,6 +54,7 @@ table {
 
 html {
 	font-size:18px;
+	font-family: "Muhkta Mahee", serif;
 }
 
 h1 {
@@ -73,16 +79,7 @@ h6 {
 button {
 	font-size: 1em;
 }
-
-@font-face {
-  font-family: "Muhkta Mahee";
-  src: url("fonts/MuktaMahee-Regular.eot");
-  src:
-  url("fonts/MuktaMahee-Regular.woff"),
-  url("fonts/MuktaMahee-Regular.woff2"),
-  url("fonts/MuktaMahee-Regular.ttf");
-}
-
-body {
-  font-family: "Muhkta Mahee", serif;
+a {
+  text-decoration: inherit;
+  color: inherit;
 }

@@ -2,21 +2,113 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <title>JS JQuery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/homepage-mobile.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <title>Jeff Wheadon Portfolio</title>
   </head>
   <body>
 
-    <div class="header">
-      <h1>My Social Network</h1>
-    </div>
+    <section class="headerSection">
+      <nav class="navbar">
+        <div class="navLeft">
+          <img src="Assets/profile_pic@2x.png" style="height:100%;">
+        </div>
+        <div class="navRight">
+          <div class="navLinksContainer">
+          </div>
+          <div class="navButtonsContainer">
+            <a target="_blank" href="https://www.linkedin.com/in/jeff-wheadon-1b4958113/"><div class="roundButton">
+              Contact Me
+            </div></a>
+          </div>
+        </div>
+      </nav>
+      <div class="headerCardWrapper">
+        <div class="headerCard">
+          <div class="headerCardLeft">
+            <img src="Assets/header-graphic.png" class="headerCardImg">
+          </div>
+          <div class="headerCardRight">
+            <div class="headerCardRightContent">
+              <div class="headerCardRightTitle">
+                <h1>Jeff Wheadon</h1>
+                <h2>Entrepreneur | Product Owner | Web Developer</h2>
+              </div>
+              <p>Product Owner offering more than 3 years of experience in front-end design, development, and managment for client-focused applications. Fosters an innovative work environment and effectively leads teams to problem solutions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <div id="usersContainer" class="usersContainer">
-    </div>
+      <div class="companiesContainer">
+        <div class="companyLogoContainer">
+          <img src="Assets/gonzaga.png" class="companyLogo" style="margin-top:-25px;">
+        </div>
+        <div class="companyLogoContainer">
+          <img src="Assets/idtech.png" class="companyLogo">
+        </div>
+        <div class="companyLogoContainer">
+          <img src="Assets/plexus.png" class="companyLogo">
+        </div>
+        <div class="companyLogoContainer">
+          <img src="Assets/stembus.png" class="companyLogo">
+        </div>
+      </div>
+    </section>
 
-    <script src="index.js"></script>
+    <section class="projectsSection bodySection">
+      <div class="projectCardsContainer">
+        <a target="_blank" href="https://dev.inter.codes"><div class="projectCard card">
+          <div class="projectCardHeader">
+            <img class="projectBadge" src="Assets/intercodes_badge.png">
+          </div>
+          <div class="projectCardBody">
+            <h4>Inter.Codes</h4>
+            <p>An online IDE designed to promote efficient collaboration</p>
+          </div>
+          <div class="cardButton">Check it Out</div>
+        </div></a>
+
+        <a target="_blank" href="http://hibernatestorage.com"><div class="projectCard card">
+          <div class="projectCardHeader">
+            <img class="projectBadge" src="Assets/hibernate_badge.png">
+          </div>
+          <div class="projectCardBody">
+            <h4>Hibernate Storage</h4>
+            <p>A summer storage solution for on-campus students</p>
+          </div>
+          <div class="cardButton">Check it Out</div>
+        </div></a>
+
+        <a target="_blank" href="http://bloomlearningspace.com"><div class="projectCard card">
+          <div class="projectCardHeader">
+            <img class="projectBadge" src="Assets/bloom_badge.png">
+          </div>
+          <div class="projectCardBody">
+            <h4>BloomLS</h4>
+            <p>An online tool for teachers to build learning spaces</p>
+          </div>
+          <div class="cardButton">Check it Out</div>
+        </div></a>
+
+      </div>
+    </section>
+
+
+
+    <footer>
+      <div class="footerTitleContainer">
+        <h2>Let's Connect</h2>
+      </div>
+      <div class="socialContainer">
+        <a target="_blank" href="https://www.facebook.com/jeff.wheadon"><i class="fab fa-facebook-square socialIcon" style="color:#3D5B97"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/jeff-wheadon-1b4958113/"><i class="fab fa-linkedin socialIcon" style="color:#127CB4"></i></a>
+      </div>
+    </footer>
   </body>
 </html>
