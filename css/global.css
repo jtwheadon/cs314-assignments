@@ -250,3 +250,14 @@ textarea {
   transition:  0.2s;
   transition-timing-function: ease-in;
 }
+
+
+.formDisplayCard {
+  width:100%;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(100,100,100,.5);
+  box-sizing: border-box;
+  overflow: none;
+  padding:10px;
+  margin-bottom:10px;
+}
